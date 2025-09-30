@@ -5,6 +5,8 @@
 
 Он не отображает всех выполненных мной работ, но служит примером того что можно от меня ожидать в сжатые сроки.
 
+[(Apache AirFlow). Магазин по продаже фигурок Гарри Поттера.](https://github.com/SainSinner/interview_tasks/tree/main/harry_potter_shop_apache_airflow)
+
 [(SQL.PostgreSQL). Города, люди и 1700 признаков.](https://github.com/SainSinner/interview_tasks/tree/main/people_cities_1700_unique_metrics)
 
 [(Apache NIFI). Магазин по продаже фигурок Гарри Поттера.](https://github.com/SainSinner/interview_tasks/tree/main/harry_potter_shop_apache_nifi)
