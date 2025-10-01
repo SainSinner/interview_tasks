@@ -1,0 +1,50 @@
+version: '3'
+services:
+  # Постгрес база в отдельном контейнере
+  postgres:
+    # Устанавливаем готовый образ
+    image: postgres
+    container_name: microservice_db
+    # Задаем глобальные переменные для доступа к PG
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=microservice_green_mobile_operator
+    restart: always
+    ports:
+      - 54322:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init_sql:/docker-entrypoint-initdb.d
+    networks:
+      - microservice_network
+
+  # app в отдельном контейнере
+  app:
+    # Сборка из Dockerfile
+    build: ./app
+    container_name: microservice_green_mobile_operator
+    # Параметры для подключения к postgres
+    environment:
+      - DATABASE_URL_JDBC=jdbc:postgresql://postgres:5432/microservice_green_mobile_operator?user=postgres&password=postgres
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/microservice_green_mobile_operator
+      - API_HP_URL=https://hp-api.onrender.com/api
+    restart: always
+    # Определяет порядок запуска сервисов
+    # Будем ждать postgres
+    depends_on:
+      - postgres
+    # Пробрасываем порты
+    ports:
+      - 54323:8001
+    # Пробрасываем папку с дагами
+    volumes:
+      - ./app:/app
+    networks:
+      - microservice_network
+
+volumes:
+  pgdata:
+
+networks:
+  microservice_network:
