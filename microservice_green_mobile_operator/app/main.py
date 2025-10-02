@@ -18,4 +18,4 @@ def def_test():
 # получить персонажей из bd
 @app.get("/bd/characters")
 def get_characters(db: Session = Depends(get_db)):
-    return get_all_characters(db).all()
+    return get_all_characters(db)

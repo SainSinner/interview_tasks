@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/airflow</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="microservice_green_mobile_operator@localhost" uuid="0677d17e-984a-47d9-ba73-7d02250c5a68">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:54322/microservice_green_mobile_operator</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

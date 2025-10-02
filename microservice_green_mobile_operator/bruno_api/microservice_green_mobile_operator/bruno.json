@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "microservice_green_mobile_operator",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

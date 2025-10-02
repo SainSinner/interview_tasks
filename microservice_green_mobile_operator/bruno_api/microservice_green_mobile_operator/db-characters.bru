@@ -1,0 +1,15 @@
+meta {
+  name: /db/characters
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{API_APP_URL}}/bd/characters
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
