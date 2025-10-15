@@ -12,3 +12,5 @@
 [(Apache NIFI). Магазин по продаже фигурок Гарри Поттера.](https://github.com/SainSinner/interview_tasks/tree/main/harry_potter_shop_apache_nifi)
 
 [(SQL.Apache NIFI). Поиск канала коммуникации с клиентом.](https://github.com/SainSinner/interview_tasks/tree/main/search_communication_channel_client)
+
+[(Python). Решение алгоритмических задач с LitCode.](https://github.com/SainSinner/interview_tasks/tree/main/algo)
