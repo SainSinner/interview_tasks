@@ -1,16 +1,21 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    answer = [i, j]
-                    return answer
+class Solution:
+    def isAnagram(self, s, t):
+        if len(s) != len(t):
+            return False
 
-solution = Solution()
-result = solution.twoSum([3,2,4], 6)
-print(result)
+        count = {}
+
+        for char in s:
+            count[char] = count.get(char, 0) + 1
+
+        for char in t:
+            if char not in count:
+                return False
+            count[char] -= 1
+            if count[char] == 0:
+                del count[char]
+
+        return len(count) == 0
+
+print(Solution().isAnagram("anagram", "nagaram"))
+print(Solution().isAnagram("ab", "ca"))
