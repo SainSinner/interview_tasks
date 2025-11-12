@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Apache Airflow для аналитика sandbox@158.160.116.58" uuid="0d26eb4e-2669-4823-8f2e-633277016c4f">
       <driver-ref>clickhouse</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.clickhouse.jdbc.ClickHouseDriver</jdbc-driver>
+      <jdbc-driver>ru.yandex.clickhouse.ClickHouseDriver</jdbc-driver>
       <jdbc-url>jdbc:clickhouse://158.160.116.58:8123/sandbox</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>

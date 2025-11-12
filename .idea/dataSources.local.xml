@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-253.27642.35">
+    <data-source name="Apache Airflow для аналитика sandbox@158.160.116.58" uuid="0d26eb4e-2669-4823-8f2e-633277016c4f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="CLICKHOUSE" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="Apache Airflow local airflow@localhost" uuid="311b868f-250b-4a1e-ba58-fb20e199f904">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="microservice_green_mobile_operator@localhost" uuid="0677d17e-984a-47d9-ba73-7d02250c5a68">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
