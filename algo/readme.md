@@ -169,3 +169,67 @@ solution = Solution()
 result = solution.longestPalindrome("abbafabba")
 print(result)
 ```
+
+### Longest Substring Without Repeating Characters
+Given a string s, find the length of the longest substring without duplicate characters.
+
+Example 1:
+
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+
+        if len(s) == 0:
+            return 0
+
+        answer = []
+
+        for i in range(len(s)):
+            s_array = []
+            for j in range(i, len(s)):
+                if s[j] not in s_array:
+                    s_array.append(s[j])
+                else:
+                    break
+            flag = 0
+            answer.append("".join(s_array))
+            s_array.clear()
+
+        return int(max(map(len, answer)))
+```
+
+### Valid Parentheses
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+Example 1:
+
+Input: s = "()"
+
+Output: true
+
+```python
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        bracket_pairs = {')': '(', ']': '[', '}': '{'}
+
+        for char in s:
+            if char in '([{':
+                stack.append(char)
+            elif char in ')]}':
+                if not stack or stack[-1] != bracket_pairs[char]:
+                    return False
+                stack.pop()
+
+        return len(stack) == 0
+```
