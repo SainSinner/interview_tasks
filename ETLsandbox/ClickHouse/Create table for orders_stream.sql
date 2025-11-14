@@ -7,6 +7,7 @@
 --  |-- status: string (nullable = true)
 --  |-- ts_data: long (nullable = true)
 --  |-- ts_event_ns: long (nullable = true)
+DROP view IF EXISTS default.orders_stream;
 DROP TABLE IF EXISTS default.orders_stream;
 CREATE TABLE IF NOT EXISTS default.orders_stream (
     key_id BIGINT,
