@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a9d83ae-9a7e-4247-ba09-731585df1fd9" name="Changes" comment="add some changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETLsandbox/ClickHouse/Create table for orders_stream.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ETLsandbox/ClickHouse/Create table for orders_stream.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETLsandbox/ClickHouse/Create table for orders_stream.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETLsandbox/PySpark/Spark from s3 to clickhouse job.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETLsandbox/PySpark/spark streaming from kafka to minio.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETLsandbox/PySpark/version of pyspark and minio.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +193,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил Algo" />
     <MESSAGE value="add source db" />
-    <option name="LAST_COMMIT_MESSAGE" value="add source db" />
+    <MESSAGE value="add some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/interview_tasks$1_Two_Sum.coverage" NAME="1_Two Sum Coverage Results" MODIFIED="1760856606110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algo" />
